@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    background: lightgray;
+}
+
+a {
+    color: darkgray;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding:2rem;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.main-header {
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.main-header h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.main-header h1 span {
+    color: teal;
+}
+
+.main-header p {
+    font-size: 2rem;
+}
+
+.main-header p span {
+    color: teal;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+img {
+    width: 100%;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    background: gray;
+    margin-bottom: 2rem;
+    align-items: center;
+    align-content: center;
+}
+
+.card h3 {
+    margin-bottom: 2rem;
+}
+
+.card img {
+    height:  400px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.card > div {
+    padding: 2rem;
+}
+
+.card:nth-child(even) img {
+    order: 2;
+}
+
+.btn {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 0.8rem 1.8rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 700px) {
+    .card {
+        display: block;
+    }
+}

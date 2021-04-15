@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="http://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="style.css">
+        <title> Vincent Gallery </title>
+    </head>
+
+    <body>
+        <header class="main-header">
+            <h1><span> Vincent </span> Gallery</h1>
+            <p> Welcome To The Gallery Dedicated To My Projects </p>
+        </header>
+
+        <main class="container">
+            <section class="card">
+                <img src='https://miro.medium.com/max/900/1*VfkzuWxBPJrxdBEOt4NcTg.jpeg' alt="">
+                <div>
+                    <h3> <span style="color: teal;"> Sauti </span>  Africa </h3>
+                    <p> An app that allow women-led businesses in East Africa to trade products across borders </p>
+
+                    <h3 style="margin-top: 2rem;"> Job <span style="color: teal"> Done </span> </h3>
+                    <p> Rebuilt the entire app from scratch after debugging. <br/>
+                        Built using React, Redux, MongoDB, Node, Cloudinary </p>
+
+                    <a href="https://sautimarket.netlify.app/" target="_blank" class="btn"> Visit </a>
+                </div>
+            </section>
+
+            <section class="card" data-aos="fade-left">
+                <img src="https://thumbs.dreamstime.com/b/free-sudoku-text-background-word-cloud-concept-96685929.jpg" alt="">
+                <div>
+                    <h3> Sudomega </h3>
+                    <p> An app designed to give users the best virtualization on Sudoku Game </p>
+
+                    <h3 style="margin-top: 2rem;"> Job <span style="color: teal"> Done </span> </h3>
+                    <p> Created the coming soon page for the upcoming updates <br/>
+                        Collaborated with 9 developers on this project <br/>
+                        Implemented testing for this project using Jest
+                    </p>
+
+                    <a href="https://sudomega.netlify.app/" target="_blank" class="btn"> Visit </a>
+                </div>
+            </section>
+
+            <section class="card" data-aos="fade-right">
+                <img src="http://pi.math.cornell.edu/~lipa/mec/4life2.png" alt="">
+                <div>
+                    <h3> Conway Game Of Life </h3>
+                    <p> Standalone Project built through a lot of research, and built with javascript </p>
+
+                    <a href="https://cgameoflife.netlify.app/" target="framename" class="btn"> Visit </a>
+                </div>
+            </section>
+
+            
+        </main>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 400,
+                duration: 1000,
+            });
+        </script>
+    </body>
+</html>
